@@ -54,7 +54,7 @@ export const CARD_TYPES = [
     displayName: 'Discover',
     type: 'discover',
     format: DEFAULT_CARD_FORMAT,
-    startPattern: /^(6011|65|64[4-9]|622)/,
+    startPattern: /^(6011|65(?!2[12])|64[4-9]|622)/,
     gaps: [4, 8, 12],
     lengths: [16, 19],
     code: {
@@ -115,6 +115,18 @@ export const CARD_TYPES = [
     type: 'hipercard',
     format: DEFAULT_CARD_FORMAT,
     startPattern: /^(384100|384140|384160|606282|637095|637568|60(?!11))/,
+    gaps: [4, 8, 12],
+    lengths: [16],
+    code: {
+      name: 'CVC',
+      length: 3
+    }
+  },
+  {
+    displayName: 'Rupay',
+    type: 'rupay',
+    format: DEFAULT_CARD_FORMAT,
+    startPattern: /^(50|652[12])/,
     gaps: [4, 8, 12],
     lengths: [16],
     code: {

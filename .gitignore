@@ -11,3 +11,7 @@ npm-debug.log*
 /PaymentInputsWrapper/
 /PaymentInputsContainer/
 /usePaymentInputs/
+/docs
+package-lock.json
+
+

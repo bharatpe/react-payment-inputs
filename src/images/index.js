@@ -7,6 +7,8 @@ import unionpay from './unionpay.js';
 import mastercard from './mastercard.js';
 import placeholder from './placeholder.js';
 import visa from './visa.js';
+import rupay from './rupay.js';
+
 
 export default {
   amex,
@@ -17,5 +19,6 @@ export default {
   unionpay,
   mastercard,
   placeholder,
-  visa
+  visa,
+  rupay,
 };
